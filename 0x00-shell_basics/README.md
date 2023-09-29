@@ -1,6 +1,6 @@
 This project is to understand shell basics and writing bash files
 
-###Some bash file notes:
+### Some bash file notes:
 - All bash file must have `#!/bin/bash` at the top of the file
 - To compile a bash file and make it executable, run `chmod +x <file name>`
 - To run a bash file, use `./<file name`
