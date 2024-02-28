@@ -94,3 +94,23 @@ A port is a logical endpoint used in network communication to identify a specifi
 **What tool/protocol is often used to check if a device is connected to a network?**
 
 Ping is a commonly used tool/protocol to check if a device is connected to a network. It sends ICMP (Internet Control Message Protocol) echo requests to the target device and waits for a response.
+
+### What is MAC addres?
+
+A MAC (Media Access Control) address, also known as a hardware address or physical address, is a unique identifier assigned to a network interface controller (NIC) for communication within a network. It is assigned by the manufacturer of the network interface and is embedded into the hardware of the device.
+
+**Key points about MAC addresses:**
+
+- Uniqueness: Each MAC address is globally unique. This means no two devices should have the same MAC address.
+
+- Format: A MAC address is typically represented as a series of six pairs of hexadecimal digits separated by colons or hyphens. For example, 00:1A:2B:3C:4D:5E.
+
+- Two Types: MAC addresses can be of two types: universally administered addresses (UAA) and locally administered addresses (LAA). UAAs are assigned by the manufacturer and are globally unique, while LAAs can be set by the network administrator and may not be globally unique.
+
+- Layer 2 Address: MAC addresses operate at the data link layer (Layer 2) of the OSI model and are used for identifying devices within the same network segment.
+
+- Not Routable: MAC addresses are not routable across different network segments or over the internet. They are used for communication within a local network.
+
+- Used in Ethernet: MAC addresses are primarily associated with Ethernet networks, where they are used by the Ethernet protocol for addressing and delivering data packets to the correct destination.
+
+Overall, MAC addresses play a crucial role in facilitating communication between devices within a local network, enabling devices to identify and communicate with each other at the data link layer.
