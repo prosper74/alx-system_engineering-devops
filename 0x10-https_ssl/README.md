@@ -9,3 +9,15 @@ Encrypting traffic serves to protect sensitive information from unauthorized acc
 
 ### SSL termination:
 SSL termination, also known as SSL offloading or SSL acceleration, refers to the process of decrypting encrypted SSL/TLS traffic at the termination point, typically at a load balancer or proxy server, before forwarding it to the backend servers. This allows the backend servers to process the traffic in plaintext, which can improve performance and reduce the computational burden on the servers. Additionally, SSL termination enables the inspection of decrypted traffic for security purposes, such as scanning for malware or monitoring for suspicious activity.
+
+### Usage
+- Add the subdomains from task 0 and wait for them to propagate
+- create our ssh key and copy the public key
+- connect to your lb-01 server and add the ssh public key to authorization keys
+- open the log file `com_log` in this repository and run all the commands
+
+
+
+100.25.134.50
+54.87.235.110
+54.237.43.50
