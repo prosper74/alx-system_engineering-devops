@@ -8,10 +8,16 @@
 #   ufw-before-forward
 #
 
+# In your web-01 server, run `sudo vi /etc/ufw/before.rules`, then paste this code below
 *nat
 :PREROUTING ACCEPT [0:0]
 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
 COMMIT
+# Save your file
+# run the following:
+#   sudo ufw allow 8080
+#   sudo service ufw restart
+#   sudo ufw enable
 
 # Don't delete these required lines, otherwise there will be errors
 *filter
