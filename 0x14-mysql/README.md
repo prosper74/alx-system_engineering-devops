@@ -22,3 +22,13 @@ To ensure that your database backup strategy actually works, you should regularl
 - **Validation testing:** Periodically restore backups to a test environment to ensure that the backup files are not corrupted and can be successfully restored.
 - **Recovery drills:** Simulate disaster scenarios and attempt to recover data from backups to verify that the backup and recovery procedures are effective.
 - **Monitoring and alerts:** Implement monitoring systems to detect backup failures or anomalies, and set up alerts to notify administrators of any issues that arise during the backup process.
+
+## Task 0.
+Follow the steps in the installation_guide file
+
+## Task 1.
+- create the setup.sql file in both servers, use `pwd` to check your working directory.
+- login to sql server and run the below command
+```
+source /home/ubuntu/setup.sql
+```
