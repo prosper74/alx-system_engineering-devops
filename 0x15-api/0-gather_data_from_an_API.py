@@ -4,9 +4,9 @@ Script that returns information about a user TODO list progress.,
 using this REST API, for a given employee ID
 """
 
-from sys import argv
 import re
 import requests
+from sys import argv
 
 API_ENDPOINT = "https://jsonplaceholder.typicode.com"
 
