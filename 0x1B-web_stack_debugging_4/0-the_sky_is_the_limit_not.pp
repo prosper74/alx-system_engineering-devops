@@ -1,12 +1,11 @@
 # nginx stack
-exec { 'change nginx ulimit':
-command  => 'echo ULIMIT="-n 2000" > /etc/default/nginx',
-path     => '/usr/bin',
-provider => 'shell'
+exec {'replace':
+  provider => shell,
+  command  => 'sudo sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 4096\"/" /etc/default/nginx',
+  before   => Exec['restart'],
 }
 
-exec { 'restart nginx':
-command  => 'service nginx restart',
-path     => '/usr/bin',
-provider => 'shell'
+exec {'restart':
+  provider => shell,
+  command  => 'sudo service nginx restart',
 }
